@@ -1,4 +1,4 @@
-package task1_collections_framework;
+package task1_collections_framework.task1;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
