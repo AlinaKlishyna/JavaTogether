@@ -1,13 +1,10 @@
 package task1_collections_framework.task2;
 
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
 public class Transliterate {
     public static HashMap<String, String> TRANS_RUSS_ENG = new HashMap<>();
-
-    public Text text;
 
     static {
         TRANS_RUSS_ENG.put("А", "A");
@@ -45,7 +42,7 @@ public class Transliterate {
     }
 
     public String transliterate(String text) {
-        String[] symbols = text.toString().toUpperCase().split("");
+        String[] symbols = text.toUpperCase().split("");
         StringBuilder transText = new StringBuilder();
         for (String symbol : symbols) {
             if (symbol.matches("[A-za-z]+") || symbol.matches("[\\s\\d,.:()!?]")) {
